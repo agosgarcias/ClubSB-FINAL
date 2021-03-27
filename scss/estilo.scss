@@ -36,11 +36,41 @@ header h1{
         opacity: 1;
     }
 }
+@media only screen and (max-width:1251px){
+    header h1{
+        font-size: 1.7rem;
+    }
+}
+@media only screen and (max-width:1107px){
+    header h1{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width:617px){
+    header h1{
+        font-size: 1rem;
+    }
+}
 header h3{
     text-align: center;
     font-size: 0.8rem;
     text-decoration: underline;
     letter-spacing: 4px;
+}
+@media only screen and (max-width:1251px){
+    header h3{
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width:1107px){
+    header h3{
+        font-size: 0.6rem;
+    }
+}
+@media only screen and (max-width:617px){
+    header h3{
+        font-size: 0.5rem;
+    }
 }
 article{
     font-style: italic;
@@ -107,6 +137,21 @@ aside h1{
     background: rgb(50,50,50);
     background: radial-gradient(circle, rgba(50,50,50,0.9364788151588761) 50%, rgba(112,112,112,0.7936216723017332) 81%, rgba(255,255,255,0.6171510840664391) 95%);
 }
+@media only screen and (max-width:1251px){
+    aside h1{
+        font-size: 1.7rem;
+    }
+}
+@media only screen and (max-width:1107px){
+    aside h1{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width:617px){
+    aside h1{
+        font-size: 1rem;
+    }
+}
 #end{
     display: grid;
     grid-template-areas: 
@@ -115,12 +160,29 @@ aside h1{
     justify-content: end;
     justify-items: flex-end;
 }
+@media only screen and (max-width:986px){
+    #end{
+        display: grid;
+        grid-template-areas: 
+        "Logo Nombre Menu";
+        grid-template-columns: 2fr 3fr 5fr;
+    }
+}
+@media only screen and (max-width:560px){
+    #end{
+        display: grid;
+        grid-template-areas: 
+        "Logo Nombre Menu";
+        grid-template-columns: 2fr 4fr 4fr;
+    }
+}
 .Logo{
     grid-area: "Logo";
 }
 .Nombre{
     grid-area: "Nombre";
 }
+
 .Menu{
     grid-area: "Menu";
     display: grid;
@@ -142,8 +204,28 @@ aside h1{
         max-width: 100%;
     }
 }
-
-
+.imglogo{
+    width: $MedidaGeneral/2;
+    height: $MedidaGeneral/2;
+}
+@media only screen and (max-width:1248px){
+    .imglogo{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+@media only screen and (max-width:768px){
+    .imglogo{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+@media only screen and (max-width:460px){
+    .imglogo{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
 /*Estilo - Actividades*/
 
 .servicios{
