@@ -2,7 +2,8 @@
 /*Estilos Generales*/
 body {
   background-image: url(../imagen/fondo.jpg);
-  background-size: cover; }
+  background-size: cover;
+  font-family: "Recursive", sans-serif; }
 
 @media only screen and (max-width: 786px) {
   body {
@@ -60,16 +61,9 @@ header h3 {
   header h3 {
     font-size: 0.5rem; } }
 
-article {
-  font-style: italic; }
-
 p {
   color: black;
   line-height: 1.6; }
-
-h2 {
-  text-align: center;
-  font-size: 30px; }
 
 h5 {
   text-align: center;
@@ -302,7 +296,94 @@ table {
   margin-left: 2rem; }
 
 /*Estilo - Contacto*/
-fieldset {
-  width: 30%;
-  height: 20rem;
-  border: double #21066b; }
+.col-lg-7 {
+  padding: 2%;
+  background: white;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.429476) 9%, rgba(240, 247, 201, 0.617151) 100%);
+  border-radius: 3rem; }
+
+@media only screen and (max-width: 993px) {
+  .col-lg-7 {
+    border-radius: 0%; } }
+
+label {
+  font-size: 1rem; }
+
+@media only screen and (max-width: 1251px) {
+  label {
+    font-size: 0.8rem; } }
+
+@media only screen and (max-width: 1107px) {
+  label {
+    font-size: 0.7rem; } }
+
+@media only screen and (max-width: 617px) {
+  label {
+    font-size: 0.9rem; } }
+
+.form-select {
+  font-size: 1rem; }
+
+@media only screen and (max-width: 1251px) {
+  .form-select {
+    font-size: 0.8rem; } }
+
+@media only screen and (max-width: 1107px) {
+  .form-select {
+    font-size: 0.7rem; } }
+
+@media only screen and (max-width: 617px) {
+  .form-select {
+    font-size: 0.9rem; } }
+
+.btn-warning {
+  background-color: #c4f15b;
+  border-style: none; }
+
+.btn-warning:hover {
+  background-color: #d7f19b; }
+
+article h2 {
+  text-align: center;
+  font-size: 2em; }
+
+@media only screen and (max-width: 1251px) {
+  article h2 {
+    font-size: 1.6em; } }
+
+@media only screen and (max-width: 1107px) {
+  article h2 {
+    font-size: 1.4em; } }
+
+@media only screen and (max-width: 617px) {
+  article h2 {
+    font-size: 1.2em; } }
+
+.beneficio {
+  text-align: center;
+  font-size: 1.5em;
+  animation-duration: 5s;
+  animation-name: beneficio; }
+
+/*@keyframes beneficio {
+    0% {
+      transform: rotateZ(10deg);
+    }
+    50% {
+      text-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    }
+    100% {
+      transform: translate(10%, 0);
+    }
+  }*/
+@media only screen and (max-width: 1251px) {
+  .beneficio {
+    font-size: 1.2rem; } }
+
+@media only screen and (max-width: 1107px) {
+  .beneficio {
+    font-size: 1.05rem; } }
+
+@media only screen and (max-width: 617px) {
+  .beneficio {
+    font-size: 0.9rem; } }

@@ -5,6 +5,7 @@
 body{
     background-image: url(../imagen/fondo.jpg);
     background-size: cover;
+    font-family: $LetraParrafo;
 }
 @media only screen and (max-width:786px){
     body{
@@ -72,15 +73,8 @@ header h3{
         font-size: 0.5rem;
     }
 }
-article{
-    font-style: italic;
-}
 p{ color: rgb(0, 0, 0);
     line-height: 1.6;
-}
-h2{
-    text-align: center;
-    font-size: 30px;
 }
 h5{
     text-align: center;
@@ -350,8 +344,110 @@ table{
 
 /*Estilo - Contacto*/
 
-fieldset{
-    width: $TamTotal*0.30;
-    height: $MedidaGeneral*2;
-    border: double rgb(33, 6, 107);
+.col-lg-7{
+    padding: 2%;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.42947601403842783) 9%, rgba(240,247,201,0.6171510840664391) 100%);
+    border-radius: 3rem;
+
+}
+@media only screen and (max-width:993px){
+    .col-lg-7{
+        border-radius: 0%;
+    }
+}
+label {
+    font-size: 1rem;
+}
+@media only screen and (max-width:1251px){
+    label{
+        font-size: 1rem*0.80;
+    }
+}
+@media only screen and (max-width:1107px){
+    label{
+        font-size: 1rem*0.70;
+    }
+}
+@media only screen and (max-width:617px){
+    label{
+        font-size: 1.5rem*0.60;
+    }
+}
+.form-select{
+    font-size: 1rem;
+}
+@media only screen and (max-width:1251px){
+    .form-select{
+        font-size: 1rem*0.80;
+    }
+}
+@media only screen and (max-width:1107px){
+    .form-select{
+        font-size: 1rem*0.70;
+    }
+}
+@media only screen and (max-width:617px){
+    .form-select{
+        font-size: 1.5rem*0.60;
+    }
+}
+.btn-warning{
+    background-color: rgb(196, 241, 91);
+    border-style: none;
+}
+
+.btn-warning:hover{
+    background-color:  rgb(215, 241, 155);
+}
+article h2{
+    text-align: center;
+    font-size: $SizeLetra;
+}
+@media only screen and (max-width:1251px){
+    article h2{
+        font-size: $SizeLetra*0.80;
+    }
+}
+@media only screen and (max-width:1107px){
+    article h2{
+        font-size: $SizeLetra*0.70;
+    }
+}
+@media only screen and (max-width:617px){
+    article h2{
+        font-size: $SizeLetra*0.60;
+    }
+}
+.beneficio{
+    text-align: center;
+    font-size: $SizeLetra - 0.5;
+    animation-duration: 5s;
+    animation-name: beneficio;
+}
+/*@keyframes beneficio {
+    0% {
+      transform: rotateZ(10deg);
+    }
+    50% {
+      text-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    }
+    100% {
+      transform: translate(10%, 0);
+    }
+  }*/
+ @media only screen and (max-width:1251px){
+    .beneficio{
+        font-size: 1.5rem*0.80;
+    }
+}
+@media only screen and (max-width:1107px){
+    .beneficio{
+        font-size: 1.5rem*0.70;
+    }
+}
+@media only screen and (max-width:617px){
+    .beneficio{
+        font-size: 1.5rem*0.60;
+    }
 }

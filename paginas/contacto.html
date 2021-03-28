@@ -14,19 +14,19 @@
 </head>
 <body>
 <header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-        <div class="container-fluid NavAjuste">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid" id="end">
             <a class="navbar-brand" href="#">
-                <img src="../imagen/logo.jpg" alt="logo" width="80" height="80">
+                <img src="../imagen/logo.jpg" alt="logo" class="imglogo">
             </a>
-            <div>
+            <div class="Nombre">
                 <h1>SAN BARTOLOMÉ</h1>
                 <h3>COMPLEJO DEPORTIVO</h3>   
             </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse FuenteNav" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse FuenteNav Menu" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">Inicio</a>
@@ -56,51 +56,55 @@
     </article>
 <br>
     <main>
-    <p>Tenemos muchos beneficios para ofrecerte</p>
-    <p>Completá el siguiente formulario:</p>
-
-    <form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputAddress" class="form-label">Nombre/s</label>
-          <input type="text" class="form-control" id="inputAddress">
-        </div>
-        <div class="col-md-6">
-            <label for="inputAddress" class="form-label">Apellido/s</label>
-            <input type="text" class="form-control" id="inputAddress">
-          </div>
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Telefono</label>
-          <input type="number" class="form-control" id="inputPassword4">
-        </div>
-        <label for="exampleDataList" class="form-label">Tipo</label>
-            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Consulta/Reclamo/Sugerencia">
-                <datalist id="datalistOptions">
-                    <option value="Consulta">
-                    <option value="Reclamo">
-                    <option value="Sugerencia">
-                </datalist>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-                ¿Deseás recibir las novedades del club?
-            </label>
-          </div>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Enviar formulario</button>
-        </div>
-      </form>
-        <br><br>
-        
+    <p class="beneficio">Tenemos muchos beneficios para ofrecerte</p>
+    <div class="row">
+        <div class="col-lg-7 mx-auto">
+            <form class="row g-3">
+                <div class="col-md-6">
+                <label for="inputAddress" class="form-label">Nombre/s</label>
+                <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputAddress" class="form-label">Apellido/s</label>
+                    <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Telefono</label>
+                <input type="number" class="form-control" id="inputPassword4">
+                </div>
+                <br><br>
+                <div class="input-group mb-3">
+                    <label for="exampleDataList" class="input-group-text">Tipo</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Selecciona</option>
+                        <option value="1">Consulta</option>
+                        <option value="2">Comentario</option>
+                        <option value="3">Reclamo</option>
+                    </select>
+                </div>        
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        ¿Deseás recibir las novedades del club?
+                    </label>
+                </div>
+                </div>
+                <div class="col-12">
+                <button type="submit" class="btn btn-warning">Enviar formulario</button>
+                </div>
+            </form>
+            </div>
+        </div>    
+    <br><br>   
     </main>
 <footer class="footer-style text-center">
     <div class="container-fluid">
