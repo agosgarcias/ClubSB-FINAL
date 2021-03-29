@@ -268,39 +268,39 @@ aside h1 {
   letter-spacing: 0.2em; }
 
 /*Estilo - Nosotros*/
-.encabezados {
-  text-align: center;
-  font-weight: bold;
-  color: #2639a1; }
-
-table {
-  border-style: solid;
-  padding: 10px 15px 10px 15px;
-  display: flex;
-  justify-content: center; }
+.table {
+  text-align: center; }
 
 .main {
-  margin-top: 2rem;
+  padding: 1rem;
   display: grid;
   grid-template-areas: "aside profesores" "aside horarios";
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(2, 20rem);
-  grid-row-gap: 5rem;
-  grid-column-gap: 5rem; }
+  grid-template-rows: 20rem 18rem; }
+
+@media only screen and (max-width: 1145px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; } }
 
 .horarios {
-  grid-area: horarios; }
+  grid-area: horarios;
+  justify-items: center;
+  padding: 1rem; }
 
 .aside {
-  grid-area: aside; }
+  grid-area: aside;
+  padding: 1em; }
 
 .FotoProfe {
-  height: 10rem; }
+  height: 9rem; }
 
 .profesores {
   grid-area: profesores;
   display: grid;
-  grid-template-areas: "titulo" "nombres" "staff" "especializacion"; }
+  grid-template-areas: "titulo" "nombres" "staff" "especializacion";
+  align-items: center; }
 
 #TituloNosotros {
   grid-area: titulo;

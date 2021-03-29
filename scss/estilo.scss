@@ -310,36 +310,36 @@ aside h1{
 
 /*Estilo - Nosotros*/
 
-.encabezados{
+.table{
     text-align: center;
-    font-weight: bold; 
-    color: rgb(38, 57, 161);
-}
-table{
-    border-style: solid;
-    padding: 10px 15px 10px 15px;
-    display: flex;
-    justify-content: center;
 }
 .main{
-    margin-top: 2rem;
+    padding: 1rem;
     display: grid;
     grid-template-areas: 
     "aside profesores"
     "aside horarios";
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(2, 20rem);
-    grid-row-gap: 5rem;
-    grid-column-gap: 5rem;
+    grid-template-rows: 20rem 18rem;
+}
+@media only screen and (max-width:1145px){
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
 .horarios{
     grid-area: horarios;
+    justify-items: center;
+    padding: 1rem;
 }
 .aside{
     grid-area: aside;
+    padding: 1em;
 }
 .FotoProfe{
-    height: $MedidaGeneral;
+    height: $MedidaGeneral *0.90;
 }
 .profesores{
     grid-area: profesores;
@@ -349,7 +349,9 @@ table{
     "nombres"
     "staff"
     "especializacion";
+    align-items: center;
 }
+
 #TituloNosotros{
     grid-area: titulo;
     text-align: center;
@@ -387,6 +389,7 @@ table{
     width: 25rem;
     margin-left: $MedidaGeneral/5;
 }
+
 #DescripcionComplejo{
     margin-left: $MedidaGeneral/5;
 }
