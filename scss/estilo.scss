@@ -75,6 +75,7 @@ header h3{
 }
 p{ color: rgb(0, 0, 0);
     line-height: 1.6;
+    font-size: 0.8rem;
 }
 h5{
     text-align: center;
@@ -188,7 +189,7 @@ aside h1{
 
 .video{
     width: $TamTotal;
-    padding: 0%;
+    padding: 0.5em;
     margin: 0%;
     max-width: 831px;
 
@@ -225,24 +226,69 @@ aside h1{
 .servicios{
     display: grid;
     grid-template-areas:
-    "actividades"
-    "FotoAct";
+    "Tenis Paddle Pileta Eventos";
+    text-align: center;
+    grid-gap: 4px;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 3rem;
 }
-.act{
-    grid-area: "actividades";
+.Tenis{
+    grid-area: "Tenis";
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 243, 209);
+    padding: 0.5rem;
+    border: black solid;
+    border-radius: 10px;
+
 }
-.FotoAct{
-    grid-area: "FotoAct";
+.Paddle{
+    grid-area: "Paddle";
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    border: black solid;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.Pileta{
+    grid-area: "Pileta";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(199, 245, 209);
+    border: black solid;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.Eventos{
+    grid-area: "Eventos";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(248, 222, 222);
+    border: black solid;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+@media only screen and (max-width:1130px){
+    .servicios{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
 .img{
     height: $MedidaGeneral;
     width: $MedidaGeneral*1.5;
     transition: heigth 2s;
+    border-radius: 10px;
 }
 .img:hover{
     transform: scale(1.5,1.5);
@@ -422,23 +468,12 @@ article h2{
         font-size: $SizeLetra*0.60;
     }
 }
-.beneficio{
+.Subtitulo{
     text-align: center;
     font-size: $SizeLetra - 0.5;
     animation-duration: 5s;
-    animation-name: beneficio;
 }
-/*@keyframes beneficio {
-    0% {
-      transform: rotateZ(10deg);
-    }
-    50% {
-      text-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-    }
-    100% {
-      transform: translate(10%, 0);
-    }
-  }*/
+
  @media only screen and (max-width:1251px){
     .beneficio{
         font-size: 1.5rem*0.80;
