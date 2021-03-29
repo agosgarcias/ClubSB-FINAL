@@ -251,13 +251,21 @@ aside h1{
 /*Estilo - Galería*/
 
 .CaruselImg{
-    margin: 2rem 10rem 2rem 10rem;
+    justify-content: center;
     width: $TamTotal*0.70;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+@media only screen and (max-width:617px){
+    .XXXX{
+        font-size: 1px;
+    }
 }
 .CarruselP{
     color: $ColorCarusel;
     letter-spacing: 0.2em;
 }
+
 
 /*Estilo - Nosotros*/
 
