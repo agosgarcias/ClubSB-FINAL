@@ -68,7 +68,8 @@ p {
 
 h5 {
   text-align: center;
-  align-content: center; }
+  align-content: center;
+  font-weight: bold; }
 
 a {
   text-decoration: none; }
@@ -91,17 +92,15 @@ span {
   align-content: center;
   text-align: center; }
 
-h5 {
-  font-weight: bold; }
-
-.AchicarFooter {
+.footer-col {
   font-size: medium;
-  font-family: "Recursive", sans-serif; }
+  font-family: "Recursive", sans-serif;
+  text-align: center; }
 
 @media only screen and (max-width: 786px) {
-  .AchicarFooter {
-    font-size: 0.7em;
-    text-align: center; } }
+  .footer-col {
+    text-align: center;
+    padding: 1em; } }
 
 .ubicacion {
   width: 100%;
@@ -383,3 +382,6 @@ article h2 {
 @media only screen and (max-width: 617px) {
   .Subtitulo {
     font-size: 0.9rem; } }
+
+.Formulario {
+  padding: 1rem; }

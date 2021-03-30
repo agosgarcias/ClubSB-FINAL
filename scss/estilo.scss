@@ -80,6 +80,7 @@ p{ color: rgb(0, 0, 0);
 h5{
     text-align: center;
     align-content: center;
+    font-weight: bold;
 }
 a{
     text-decoration: none;
@@ -104,18 +105,16 @@ span{
     align-content: center;
     text-align: center;
 }
-h5{
-    font-weight: bold;
-}
-.AchicarFooter{
+.footer-col{
     font-size: medium;
     font-family: $LetraParrafo;
+    text-align: center;
 }
 
 @media only screen and (max-width:786px){
-    .AchicarFooter{
-         font-size: 0.7em;
-         text-align: center;  
+    .footer-col{
+         text-align: center; 
+        padding: 1em;
     }
 }
 .ubicacion{
@@ -448,4 +447,7 @@ article h2{
     .Subtitulo{
         font-size: 1.5rem*0.60;
     }
+}
+.Formulario{
+    padding: 1rem;
 }
