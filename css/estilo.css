@@ -37,11 +37,7 @@ header h1 {
 
 @media only screen and (max-width: 1107px) {
   header h1 {
-    font-size: 1.3rem; } }
-
-@media only screen and (max-width: 617px) {
-  header h1 {
-    font-size: 1rem; } }
+    font-size: 1.5rem; } }
 
 header h3 {
   text-align: center;
@@ -120,12 +116,13 @@ aside h1 {
 
 @media only screen and (max-width: 1107px) {
   aside h1 {
-    font-size: 1.3rem; } }
+    font-size: 1.5rem; } }
 
-@media only screen and (max-width: 617px) {
-  aside h1 {
-    font-size: 1rem; } }
-
+/*@media only screen and (max-width:617px){
+    aside h1{
+        font-size: 1rem;
+    }
+}*/
 #end {
   display: grid;
   grid-template-areas: "Logo Nombre Menu";
