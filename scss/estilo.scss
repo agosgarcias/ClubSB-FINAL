@@ -310,9 +310,6 @@ aside h1{
 
 /*Estilo - Nosotros*/
 
-.table{
-    text-align: center;
-}
 .main{
     padding: 1rem;
     display: grid;
@@ -332,64 +329,23 @@ aside h1{
 .horarios{
     grid-area: horarios;
     justify-items: center;
-    padding: 1rem;
+    margin-top: 4em;
 }
 .aside{
     grid-area: aside;
     padding: 1em;
 }
-.FotoProfe{
-    height: $MedidaGeneral *0.90;
-}
+
 .profesores{
     grid-area: profesores;
-    display: grid;
-    grid-template-areas: 
-    "titulo"
-    "nombres"
-    "staff"
-    "especializacion";
-    align-items: center;
 }
-
-#TituloNosotros{
-    grid-area: titulo;
+.card-text{
     text-align: center;
 }
-.Identidad{
-    grid-area: nombres;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-}
-.staff{
-    grid-area: staff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-}
-.especializacion{
-    grid-area: especializacion;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    width: auto;
-}
-.Profesion{
- text-align: center;
-}
+
 .SubtituloNos{
     text-align: center;
 }
-#FotoCancha{
-    height: 23rem;
-    width: 25rem;
-    margin-left: $MedidaGeneral/5;
-}
-
 #DescripcionComplejo{
     margin-left: $MedidaGeneral/5;
 }
